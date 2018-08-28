@@ -1,4 +1,10 @@
 ---
+- name: Create directory
+  file:
+    path: "{{ item.1.path}}"
+    state: directory
+  with_indexed_items:
+    - "{{ virt_guest_disks }}"
 
 - name: Create the disks
   qemu_img:
