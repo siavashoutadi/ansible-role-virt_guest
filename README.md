@@ -31,6 +31,10 @@ virt_guest_memory: 2
 #   size: SIZE in MB
 virt_guest_disks: []
 
+# Owner and group of the disk files
+virt_guest_disks_owner: qemu
+virt_guest_disks_group: qemu
+
 # Networks to add
 # The format is:
 # - NET_NAME
